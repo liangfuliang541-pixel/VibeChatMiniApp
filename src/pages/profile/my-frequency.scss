@@ -1,0 +1,158 @@
+@import '../../app.scss';
+
+.frequency-page {
+  padding-bottom: 80px;
+}
+
+.vibe-type-card {
+  background: linear-gradient(135deg, rgba(255, 179, 102, 0.2) 0%, rgba(255, 107, 138, 0.1) 100%);
+  border: 1px solid rgba(255, 179, 102, 0.3);
+  border-radius: 24px;
+  padding: 48px 32px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.vibe-type-name {
+  font-size: 48px;
+  font-weight: 700;
+  color: $accent-warm;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.vibe-type-desc {
+  font-size: 26px;
+  color: $text-secondary;
+  display: block;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.resonance-count {
+  font-size: 24px;
+  color: $text-tertiary;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 24px;
+  border-radius: 20px;
+}
+
+.frequency-section {
+  background: $bg-card;
+  border-radius: 24px;
+  padding: 32px;
+  margin-bottom: 32px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: $text-primary;
+  display: block;
+  margin-bottom: 28px;
+}
+
+.frequency-item {
+  margin-bottom: 32px;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.freq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.freq-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.freq-icon {
+  font-size: 32px;
+}
+
+.freq-label {
+  font-size: 28px;
+  color: $text-primary;
+  font-weight: 500;
+}
+
+.freq-value {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.freq-bar-track {
+  height: 16px;
+  background: $bg-primary;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.freq-bar-fill {
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.8s ease;
+}
+
+.freq-tag {
+  font-size: 22px;
+  color: $text-secondary;
+}
+
+.history-section {
+  background: $bg-card;
+  border-radius: 24px;
+  padding: 32px;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid $border-color;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.history-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.history-type {
+  font-size: 36px;
+}
+
+.history-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.history-peer {
+  font-size: 28px;
+  color: $text-primary;
+  margin-bottom: 4px;
+}
+
+.history-date {
+  font-size: 22px;
+  color: $text-tertiary;
+}
+
+.history-sync {
+  font-size: 30px;
+  font-weight: 700;
+}

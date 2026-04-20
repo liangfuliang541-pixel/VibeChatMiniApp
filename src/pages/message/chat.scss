@@ -1,0 +1,155 @@
+@import '../../app.scss';
+
+.chat-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: $bg-primary;
+}
+
+.message-list {
+  flex: 1;
+  padding: 24px 32px;
+  overflow-y: auto;
+}
+
+.message-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 32px;
+  
+  &.mine {
+    flex-direction: row-reverse;
+    
+    .msg-bubble {
+      background: linear-gradient(135deg, $accent-warm 0%, #FF8C42 100%);
+      border-radius: 24px 24px 4px 24px;
+    }
+    
+    .msg-text {
+      color: #000;
+    }
+    
+    .msg-time {
+      text-align: right;
+    }
+  }
+  
+  &.peer {
+    .msg-bubble {
+      background: $bg-card;
+      border-radius: 24px 24px 24px 4px;
+    }
+  }
+}
+
+.msg-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin: 0 16px;
+}
+
+.msg-bubble {
+  max-width: 480px;
+  padding: 20px 28px;
+}
+
+.msg-text {
+  font-size: 28px;
+  line-height: 1.6;
+  color: $text-primary;
+  word-break: break-all;
+}
+
+.msg-image {
+  width: 300px;
+  border-radius: 12px;
+}
+
+.msg-time {
+  display: block;
+  font-size: 20px;
+  color: $text-tertiary;
+  margin-top: 8px;
+}
+
+.empty-chat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 200px;
+}
+
+.empty-icon {
+  font-size: 80px;
+  margin-bottom: 24px;
+}
+
+.empty-text {
+  font-size: 28px;
+  color: $text-tertiary;
+}
+
+.input-bar {
+  background: $bg-secondary;
+  border-top: 1px solid $border-color;
+  padding: 16px 24px;
+  padding-bottom: calc(16px + env(safe-area-inset-bottom));
+}
+
+.input-bar-inner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.img-btn {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.img-icon {
+  font-size: 40px;
+}
+
+.chat-input {
+  flex: 1;
+  height: 72px;
+  background: $bg-card;
+  border-radius: 36px;
+  padding: 0 28px;
+  font-size: 28px;
+  color: $text-primary;
+}
+
+.send-btn {
+  width: 120px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $bg-card;
+  border-radius: 36px;
+  flex-shrink: 0;
+  
+  &.active {
+    background: linear-gradient(135deg, $accent-warm 0%, #FF8C42 100%);
+    
+    .send-text {
+      color: #000;
+    }
+  }
+}
+
+.send-text {
+  font-size: 26px;
+  font-weight: 600;
+  color: $text-tertiary;
+}

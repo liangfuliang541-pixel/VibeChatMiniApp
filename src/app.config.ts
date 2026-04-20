@@ -9,7 +9,9 @@ export default defineAppConfig({
     'pages/discover/detail',
     'pages/message/index',
     'pages/message/chat',
-    'pages/profile/index'
+    'pages/profile/index',
+    'pages/profile/settings',
+    'pages/profile/my-frequency'
   ],
   window: {
     backgroundTextStyle: 'light',

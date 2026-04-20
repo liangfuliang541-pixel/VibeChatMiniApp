@@ -1,0 +1,44 @@
+@import '../../app.scss';
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 40px;
+}
+
+.empty-icon {
+  font-size: 96px;
+  margin-bottom: 24px;
+}
+
+.empty-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: $text-secondary;
+  margin-bottom: 12px;
+}
+
+.empty-desc {
+  font-size: 26px;
+  color: $text-tertiary;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.empty-action {
+  background: linear-gradient(135deg, $accent-warm 0%, #FF8C42 100%);
+  border-radius: 36px;
+  padding: 16px 48px;
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.action-text {
+  font-size: 28px;
+  font-weight: 600;
+  color: #000;
+}
