@@ -1,0 +1,192 @@
+@import '../../app.scss';
+
+.profile-page {
+  padding: 40px 32px;
+}
+
+.profile-card {
+  background: $bg-card;
+  border-radius: 24px;
+  padding: 48px 32px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.profile-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-bottom: 24px;
+  border: 4px solid $accent-warm;
+}
+
+.profile-name {
+  font-size: 40px;
+  font-weight: 700;
+  color: $text-primary;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.profile-id {
+  font-size: 22px;
+  color: $text-tertiary;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.profile-bio {
+  font-size: 26px;
+  color: $text-secondary;
+  display: block;
+  margin-bottom: 32px;
+}
+
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 32px;
+  border-top: 1px solid $border-color;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 36px;
+  font-weight: 700;
+  color: $accent-warm;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 22px;
+  color: $text-secondary;
+}
+
+.frequency-section {
+  background: $bg-card;
+  border-radius: 24px;
+  padding: 32px;
+  margin-bottom: 32px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: $text-primary;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.frequency-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.frequency-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.bar-label {
+  font-size: 24px;
+  color: $text-secondary;
+  width: 80px;
+  flex-shrink: 0;
+}
+
+.bar-track {
+  flex: 1;
+  height: 12px;
+  background: $bg-primary;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 6px;
+  transition: width 0.5s ease;
+  
+  &.emotion {
+    background: linear-gradient(90deg, #FFB366 0%, #FF8C42 100%);
+  }
+  
+  &.aesthetic {
+    background: linear-gradient(90deg, #4ECDC4 0%, #44A08D 100%);
+  }
+  
+  &.rhythm {
+    background: linear-gradient(90deg, #FF6B8A 0%, #FF4D6D 100%);
+  }
+  
+  &.behavior {
+    background: linear-gradient(90deg, #A78BFA 0%, #8B5CF6 100%);
+  }
+}
+
+.bar-value {
+  font-size: 24px;
+  font-weight: 600;
+  color: $text-primary;
+  width: 50px;
+  text-align: right;
+}
+
+.menu-section {
+  background: $bg-card;
+  border-radius: 24px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 32px;
+  border-bottom: 1px solid $border-color;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  &:active {
+    background: rgba(255, 255, 255, 0.05);
+  }
+}
+
+.menu-icon {
+  font-size: 36px;
+  margin-right: 24px;
+}
+
+.menu-text {
+  flex: 1;
+  font-size: 30px;
+  color: $text-primary;
+}
+
+.menu-arrow {
+  font-size: 32px;
+  color: $text-tertiary;
+}
+
+.logout-btn {
+  width: 100%;
+  height: 96px;
+  line-height: 96px;
+  background: transparent;
+  border: 1px solid rgba(255, 107, 138, 0.5);
+  border-radius: 48px;
+  color: $accent-heart;
+  font-size: 30px;
+  
+  &:active {
+    background: rgba(255, 107, 138, 0.1);
+  }
+}

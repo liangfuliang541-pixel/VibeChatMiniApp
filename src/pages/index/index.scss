@@ -1,0 +1,106 @@
+@import '../../app.scss';
+
+.home-page {
+  padding-top: 80px;
+}
+
+.logo-section {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.logo-text {
+  font-size: 56px;
+  font-weight: 800;
+  background: linear-gradient(135deg, $accent-warm 0%, #FF8C42 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.slogan {
+  font-size: 28px;
+  color: $text-secondary;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: $text-primary;
+  margin-bottom: 32px;
+  display: block;
+}
+
+.interaction-card {
+  background: $bg-card;
+  border-radius: 24px;
+  padding: 32px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  border: 1px solid $border-color;
+  animation: slideUp 0.5s ease-out forwards;
+  opacity: 0;
+  transform: translateY(30px);
+  
+  &:active {
+    transform: scale(0.98);
+    opacity: 0.8;
+  }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24px;
+  flex-shrink: 0;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: $text-primary;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.card-desc {
+  font-size: 24px;
+  color: $text-secondary;
+  display: block;
+}
+
+.card-arrow {
+  font-size: 40px;
+  color: $text-tertiary;
+  margin-left: 16px;
+}
+
+.bottom-tip {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.tip-text {
+  font-size: 24px;
+  color: $text-tertiary;
+  display: block;
+  margin-bottom: 8px;
+}

@@ -1,0 +1,137 @@
+@import '../../app.scss';
+
+.interaction-page {
+  padding-top: 40px;
+}
+
+.status-bar {
+  margin-bottom: 48px;
+}
+
+.timer {
+  font-size: 64px;
+  font-weight: 700;
+  color: $accent-warm;
+  display: block;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.progress-bar {
+  height: 8px;
+  background: $bg-card;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, $accent-warm 0%, #FF8C42 100%);
+  border-radius: 4px;
+  transition: width 1s linear;
+}
+
+.question-section {
+  margin-bottom: 48px;
+}
+
+.question-label {
+  font-size: 24px;
+  color: $accent-warm;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.question-content {
+  font-size: 40px;
+  font-weight: 600;
+  color: $text-primary;
+  line-height: 1.5;
+  display: block;
+}
+
+.options-section {
+  margin-bottom: 48px;
+}
+
+.option-card {
+  background: $bg-card;
+  border-radius: 20px;
+  padding: 32px;
+  margin-bottom: 20px;
+  border: 2px solid transparent;
+  position: relative;
+  transition: all 0.2s ease;
+  
+  &:active {
+    transform: scale(0.98);
+  }
+  
+  &.selected {
+    border-color: $accent-warm;
+    background: rgba(255, 179, 102, 0.1);
+  }
+  
+  &.opponent {
+    border-color: $accent-cool;
+    background: rgba(78, 205, 196, 0.1);
+  }
+  
+  &.match {
+    border-color: #4ADE80;
+    background: rgba(74, 222, 128, 0.15);
+  }
+}
+
+.option-text {
+  font-size: 32px;
+  color: $text-primary;
+  display: block;
+}
+
+.option-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 20px;
+  padding: 4px 12px;
+  border-radius: 8px;
+  
+  &.mine {
+    background: $accent-warm;
+    color: #000;
+  }
+  
+  &.opponent {
+    background: $accent-cool;
+    color: #000;
+  }
+}
+
+.result-section {
+  text-align: center;
+  padding: 48px 0;
+}
+
+.result-icon {
+  font-size: 80px;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.result-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: $text-primary;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.result-desc {
+  font-size: 28px;
+  color: $text-secondary;
+  display: block;
+  margin-bottom: 48px;
+}

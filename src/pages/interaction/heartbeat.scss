@@ -1,0 +1,124 @@
+@import '../../app.scss';
+
+.heartbeat-page {
+  padding-top: 40px;
+}
+
+.heartbeat-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.heartbeat-label {
+  font-size: 24px;
+  color: $accent-heart;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.heartbeat-desc {
+  font-size: 28px;
+  color: $text-secondary;
+}
+
+.waveform-container {
+  background: $bg-card;
+  border-radius: 24px;
+  padding: 32px;
+  margin-bottom: 48px;
+}
+
+.waveform-canvas {
+  width: 100%;
+  height: 150px;
+  display: block;
+}
+
+.waveform-legend {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.legend-item {
+  font-size: 24px;
+  padding: 4px 16px;
+  border-radius: 8px;
+  
+  &.mine {
+    background: rgba(255, 179, 102, 0.2);
+    color: $accent-warm;
+  }
+  
+  &.opponent {
+    background: rgba(78, 205, 196, 0.2);
+    color: $accent-cool;
+  }
+}
+
+.tap-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 0;
+}
+
+.tap-button {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, $accent-heart 0%, #FF4D6D 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 60px rgba(255, 107, 138, 0.4);
+  transition: all 0.1s ease;
+  
+  &:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 30px rgba(255, 107, 138, 0.3);
+  }
+  
+  &.active {
+    animation: pulse 0.5s ease-in-out;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.tap-text {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.tap-hint {
+  font-size: 24px;
+  color: $text-tertiary;
+  margin-top: 24px;
+}
+
+.sync-rate {
+  font-size: 96px;
+  font-weight: 800;
+  background: linear-gradient(135deg, $accent-warm 0%, $accent-heart 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+  text-align: center;
+}
+
+.sync-label {
+  font-size: 28px;
+  color: $text-secondary;
+  text-align: center;
+  display: block;
+  margin-bottom: 32px;
+}
